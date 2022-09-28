@@ -103,7 +103,7 @@ sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.Cardchain/config/conf
 
 ## Reset chain data
 ```
-hid-noded tendermint unsafe-reset-all --home $HOME/.Cardchain
+Cardchain tendermint unsafe-reset-all --home $HOME/.Cardchain
 ```
 
 ## Create service
