@@ -51,7 +51,7 @@ curl https://get.ignite.com/DecentralCardGame/Cardchain@latest! | sudo bash
 
 ## Init app
 ```
-hid-noded init $NODENAME --chain-id $CARDCHAIN_CHAIN_ID
+Cardchain init $NODENAME --chain-id $CARDCHAIN_CHAIN_ID
 ```
 
 ## Download genesis and addrbook
