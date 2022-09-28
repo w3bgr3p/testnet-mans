@@ -1,5 +1,4 @@
 # Node setup
-If you want to setup fullnode manually follow the steps below
 
 ## Setting up vars
 Here you have to put name of your moniker (validator) that will be visible in explorer
