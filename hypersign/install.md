@@ -92,11 +92,11 @@ sed -i -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0uhid\"/" $HOME/.hi
 ```
 ## Set bad peers filter (optional)
 ```
-sed -i -e "s/^filter_peers *=.*/filter_peers = \"true\"/" $HOME/.noisd/config/config.toml
+sed -i -e "s/^filter_peers *=.*/filter_peers = \"true\"/" $HOME/.hid-node/config/config.toml
 ```
 ## Enable snapshots (optional)
 ```
-snapshot_interval=1000 && \ sed -i.bak -e "s/^snapshot-interval *=.*/snapshot-interval = \"$snapshot_interval\"/" ~/.noisd/config/app.toml```
+snapshot_interval=1000 && \ sed -i.bak -e "s/^snapshot-interval *=.*/snapshot-interval = \"$snapshot_interval\"/" ~/.hid-node/config/app.toml```
 ```
 ## Enable prometheus
 ```
