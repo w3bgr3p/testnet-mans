@@ -37,7 +37,7 @@
 use it to watch for sync progress when sync will be done you can proceed
  step 1. access your docker container
 
-    docker exec -it bifrost-validator /bin/bash
+    docker exec -it NODENAME /bin/bash
 
  step 2. move to the tools directory
 
@@ -58,7 +58,7 @@ If you extracting it from metamask then you have to put 0x in start of sting
 
 Set session keys
 
-    npm run set_session_keys -- \ --controllerPrivate "YOUR_CONTROLLER_PRIVATE_KEY"
+    npm run set_session_keys -- --controllerPrivate "YOUR_CONTROLLER_PRIVATE_KEY"
 
  **Bonding**
  for a basic node
