@@ -28,20 +28,20 @@ sudo chown -R $(id -u):$(id -g) /var/lib/bifrost-data
 ### Запускаем ноду (меняем NODENAME на свое. ВЕЗДЕ!)
 
 ```
-docker run -d -p 30333:30333 -p 9933:9933 -v "/var/lib/bifrost-data:/data" --name "NODENAME" thebifrost/bifrost-node:latest \ 
+docker run -d -p 30333:30333 -p 9933:9933 -v "/var/lib/bifrost-data:/data" --name "bifrost" thebifrost/bifrost-node:latest \ 
 --base-path /data \ --chain /specs/bifrost-testnet.json \ 
 --port 30333 \ 
 --validator \ 
 --state-cache-size 0 \ 
 --runtime-cache-size 64 \ 
 --telemetry-url "wss://telemetry-connector.testnet.thebifrost.io/submit 0" \ 
---name "NODENAME"
+--name "YOUR CONTROLLER ADDRESS HERE"
 ```
 
 ### Логи
 
 ```
-docker logs -f NODENAME
+docker logs -f bifrost
 ```
 
 запускаем логи ждем пока нода отсинхронизируется, только потом едем дальше
@@ -49,16 +49,8 @@ docker logs -f NODENAME
 ### Переходим в наш докер контейнер
 
 ```
-docker exec -it NODENAME /bin/bash
-```
-
-```
+docker exec -it bifrost /bin/bash
 cd tools
-```
-
-### Ставим npm (предложит обновиться, но это не обязательно)
-
-```
 npm install
 ```
 
@@ -96,4 +88,3 @@ npm run join_validators -- \
   --bond "100000"
 ```
 
-Пока все других заданий не выкладывали
