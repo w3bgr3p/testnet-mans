@@ -71,7 +71,7 @@ _пример_
 ### Задаем ключи сессии
 
 ```
-npm run set_session_keys -- \ --controllerPrivate "YOUR_CONTROLLER_PRIVATE_KEY"
+npm run set_session_keys --  --controllerPrivate "YOUR_CONTROLLER_PRIVATE_KEY"
 ```
 
 ### Делаем стейк в нашего валика
