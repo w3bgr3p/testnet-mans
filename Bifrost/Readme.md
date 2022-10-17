@@ -37,7 +37,7 @@
 use it to watch for sync progress when sync will be done you can proceed
  step 1. access your docker container
 
-    docker exec -it NODENAME /bin/bash
+    docker exec -it bifrost /bin/bash
 
  step 2. move to the tools directory
 
