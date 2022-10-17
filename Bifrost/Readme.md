@@ -72,3 +72,17 @@ Set session keys
       --stashPrivate "YOUR_STASH_PRIVATE_KEY" \
       --relayerPrivate "YOUR_RELAYER_PRIVATE_KEY" \
       --bond "100000"
+      
+  usefull commands
+  
+  restart
+  
+    docker restart bifrost
+  logs
+  
+    docker logs -f bifrost
+  delete node
+  
+    docker stop bifrost &&  sudo  docker  rm bifrost
+    rm -rf /var/lib/bifrost-data
+   
