@@ -35,17 +35,13 @@
     docker logs -f bifrost
 
 use it to watch for sync progress when sync will be done you can proceed
- step 1. access your docker container
+ step 1. access your docker container and install required packages
 
     docker exec -it bifrost /bin/bash
-
- step 2. move to the tools directory
-
     cd tools
-
- step 3. install required packages
-
     npm install
+    npm install -g npm@8.19.2
+    
 
 Now you will need your private keys which you was registered in form:
 If you extracting it from metamask then you have to put 0x in start of sting
