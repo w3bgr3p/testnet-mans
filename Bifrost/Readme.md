@@ -58,7 +58,8 @@ If you extracting it from metamask then you have to put 0x in start of sting
 
 Set session keys
 
-    npm run set_session_keys -- --controllerPrivate "YOUR_CONTROLLER_PRIVATE_KEY"
+    npm run set_session_keys -- \
+    --controllerPrivate "YOUR_CONTROLLER_PRIVATE_KEY"
 
  **Bonding**
  for a basic node
