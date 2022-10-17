@@ -22,13 +22,14 @@
     sudo chown -R $(id -u):$(id -g) /var/lib/bifrost-data
 ### Run the validator node (change NODENAME to yours)
 
-    docker run -d -p 30333:30333 -p 9933:9933 -v "/var/lib/bifrost-data:/data" --name "bifrost" thebifrost/bifrost-node:latest \ 
-    --base-path /data \ --chain /specs/bifrost-testnet.json \ 
-    --port 30333 \ 
-    --validator \ 
-    --state-cache-size 0 \ 
-    --runtime-cache-size 64 \ 
-    --telemetry-url "wss://telemetry-connector.testnet.thebifrost.io/submit 0" \ 
+      docker run -d -p 30333:30333 -p 9933:9933 -v "/var/lib/bifrost-data:/data" --name "bifrost" thebifrost/bifrost-node:latest \
+	--base-path /data \
+    --chain /specs/bifrost-testnet.json \
+    --port 30333 \
+     --validator \
+     --state-cache-size 0 \
+    --runtime-cache-size 64 \
+	--telemetry-url "wss://telemetry-connector.testnet.thebifrost.io/submit 0" \
     --name "YOUR CONTROLLER ADDRESS"
 
 ###  Logs
