@@ -20,7 +20,7 @@
 ### Set the ownership
 
     sudo chown -R $(id -u):$(id -g) /var/lib/bifrost-data
-### Run the validator node (change NODENAME to yours)
+### Run the validator node (change YOUR CONTROLLER ADDRESS to your)
 
       docker run -d -p 30333:30333 -p 9933:9933 -v "/var/lib/bifrost-data:/data" --name "bifrost" thebifrost/bifrost-node:latest \
 	--base-path /data \
