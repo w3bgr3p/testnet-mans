@@ -1,5 +1,7 @@
 # BiFrost for docker users
 
+[Week 2 update](https://github.com/chaingon/testnet-mans/blob/main/Bifrost/week2.md) 
+
 ### Install docker
 
     sudo -i
