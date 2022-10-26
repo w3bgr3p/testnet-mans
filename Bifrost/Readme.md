@@ -88,4 +88,7 @@ Set session keys
   
     docker stop bifrost &&  sudo  docker  rm bifrost
     rm -rf /var/lib/bifrost-data
+    
+  If your valodator have status IDLE go [here](https://polkadot.js.org/apps/?rpc=wss://public-01.testnet.thebifrost.io/ws#/extrinsics) chose `bfcStaking` and `goOnline()`
+Submit tx
    
